@@ -1,0 +1,78 @@
+.Meeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+    padding: 0 10vw;
+    max-width: 100vw;
+}
+
+.Meeting article.text {
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Meeting article.text h1 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 0.8em;
+
+    margin: 0;
+}
+
+.Meeting article.text h2 {
+    font-size: 1.2em;
+    font-weight: lighter;
+
+    margin-top: 6px;
+    margin-bottom: -4px;
+
+    align-self: flex-end;
+}
+
+.Meeting article.text h2:first-child {
+    align-self: flex-start;
+}
+
+.Meeting article.circles {
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Meeting article.circles img {
+
+    border-radius: 50%;
+    min-width: 12vw;
+    min-height: 12vw;
+    left: 10vw;
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+
+.Meeting article.circles div.circle {
+    display: block;
+    position: relative;
+
+    border-radius: 50%;
+    min-width: 12vw;
+    min-height: 12vw;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+    background-color: var(--aquamarine);
+}
+
+.Meeting article.circles div.circle.circle-1 {
+    z-index: 3;
+    background-color: var(--persiangreen);
+    left: 5vw;
+}
