@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
   --gunmental: #2C363F;
   --antiquewhite: #FFEEDB;
   --persiangreen: #17A398;
   --aquamarine: #00F0B5;
+  --mint: #4ef8ce;
   --coquelicot: #F34213;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,10 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body,
+div#root {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
-  min-width: 100vw;
+  min-width: 100%;
+  max-width: 100vw;
   min-height: 100vh;
 }
