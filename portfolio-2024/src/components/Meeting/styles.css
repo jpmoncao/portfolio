@@ -54,42 +54,6 @@
     padding-right: calc(6vw - 2rem / 2);
 }
 
-
-.Meeting article.circles img {
-    border-radius: 50%;
-    min-width: calc(50vw / 3);
-    min-height: calc(50vw / 3);
-    left: 10vw;
-    display: block;
-    position: relative;
-    z-index: 4;
-    background-color: var(--mint);
-    box-shadow: inset 0px 0px 4px var(--gunmental);
-}
-
-.Meeting article.circles div.circle {
-    display: block;
-    position: relative;
-
-    border-radius: 50%;
-    min-width: calc(50vw / 3);
-    min-height: calc(50vw / 3);
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 2;
-    background-color: var(--aquamarine);
-    box-shadow: inset 0px 0px 4px var(--aquamarine);
-}
-
-.Meeting article.circles div.circle.circle-1 {
-    z-index: 3;
-    background-color: var(--persiangreen);
-    box-shadow: inset 0px 0px 4px var(--persiangreen);
-    left: 5vw;
-}
-
 @media screen and (max-width: 1023px) {
 
     /* Container */
@@ -154,6 +118,7 @@
 
     .Meeting article.text h1 {
         font-size: calc(5em / 1.8);
+        margin-top: 6px;
     }
 
     .Meeting article.text h2 {
