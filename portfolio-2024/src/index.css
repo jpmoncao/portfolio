@@ -7,6 +7,7 @@
   --aquamarine: #00F0B5;
   --mint: #4ef8ce;
   --coquelicot: #F34213;
+  --aqua-fade: linear-gradient(0deg, #00F0B5, #17A398);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

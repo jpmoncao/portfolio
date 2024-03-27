@@ -1,5 +1,8 @@
-import './styles.css';
 import { motion } from 'framer-motion';
+
+import { variants } from '../../utils/variants';
+
+import './styles.css';
 
 export default function Meeting() {
     const circleStyle = {
@@ -11,29 +14,13 @@ export default function Meeting() {
         width: '100%'
     }
 
-    const iconStyle = {
-
-    }
-
-    const variants = {
-        rightToLeftInitial: { x: 75, opacity: 0 },
-        rightToLeftAnimate: { x: 0, opacity: 1 },
-        LeftToRightInitial: { x: -75, opacity: 0 },
-        LeftToRightAnimate: { x: 0, opacity: 1 },
-        DownToTopInitial: { y: 75, opacity: 0 },
-        DownToTopAnimate: { y: 0, opacity: 1 },
-        FadeInitial: { opacity: 0 },
-        FadeAnimate: { opacity: 1 },
-        scaleUp: { size: 1.5 }
-    }
-
     return (
         <section className='Meeting'>
             <article className='text'>
                 <motion.h2
                     initial={variants.FadeInitial}
                     animate={variants.FadeAnimate}
-                    transition={{ duration: 0.5, delay: 0.25 }}
+                    transition={{ duration: 0.75, delay: 0.25 }}
                 >Hello World! I am</motion.h2>
                 <motion.h1
                     initial={variants.DownToTopInitial}
@@ -44,7 +31,7 @@ export default function Meeting() {
                     initial={variants.LeftToRightInitial}
                     animate={variants.LeftToRightAnimate}
                     transition={{ duration: 1.5, delay: 0.5 }}
-                >FullStack Web Developer</motion.h2>
+                >Software Developer</motion.h2>
             </article>
             <article className='circles-container'>
                 <article className='social-icons'>
