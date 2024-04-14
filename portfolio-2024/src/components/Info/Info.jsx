@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useScroll, motion } from "framer-motion";
 
+import Navigator from "./Navigator";
+
 import './styles.css';
 
 export default function Info() {
@@ -8,6 +10,7 @@ export default function Info() {
 
     return (
         <section className='Info'>
+            <Navigator />
             <article className='text'>
                 <motion.h1
                     style={{ scaleY: scrollYProgress }}
