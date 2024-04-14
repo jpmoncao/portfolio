@@ -24,7 +24,7 @@
 }
 
 .Meeting article.text h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 800;
     line-height: 0.8em;
 
@@ -56,6 +56,22 @@
 
 }
 
+.Meeting article.circles {
+    padding: 0;
+    max-width: 75%;
+    margin-left: -10vw;
+}
+
+.Meeting article.circles img {
+    min-width: calc(55vw / 3);
+    min-height: calc(55vw / 3);
+}
+
+.Meeting article.circles div {
+    min-width: calc(55vw / 3);
+    min-height: calc(55vw / 3);
+}
+
 /* Social icons */
 .Meeting article.social-icons {
     display: flex;
@@ -65,6 +81,14 @@
     gap: 1rem;
     width: 100%;
     padding-right: 2rem;
+}
+
+.Meeting article.social-icons a {
+    height: 1.5rem;
+}
+
+.Meeting article.social-icons img {
+    height: 100%;
 }
 
 /* Círculos */
@@ -91,14 +115,46 @@
     .Meeting article.text {
         padding: 0;
         margin: 0 auto;
-        max-width: 75%;
+        max-width: 100%;
     }
 
     /* Círculos */
+    .Meeting article.circles-container {
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .Meeting article.circles {
         padding: 0;
         max-width: 75%;
         margin-left: -10vw;
+    }
+
+    .Meeting article.circles img {
+        min-width: calc(55vw / 3);
+        min-height: calc(55vw / 3);
+        left: 10vw;
+    }
+
+    .Meeting article.circles div {
+        min-width: calc(55vw / 3);
+        min-height: calc(55vw / 3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Meeting article.circles-container {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .Meeting article.text h1 {
+        font-size: calc(5em / 1.2);
+    }
+
+    .Meeting article.text h2 {
+        font-size: calc(1.5em / 1.2);
     }
 
     .Meeting article.circles img {
@@ -107,19 +163,13 @@
         left: 10vw;
     }
 
-    .Meeting article.circles div.circle {
+    .Meeting article.circles div {
         min-width: calc(75vw / 3);
         min-height: calc(75vw / 3);
     }
-}
 
-@media screen and (max-width: 767px) {
-    .Meeting article.text h1 {
-        font-size: calc(5em / 1.2);
-    }
-
-    .Meeting article.text h2 {
-        font-size: calc(1.5em / 1.2);
+    .Meeting article.social-icons {
+        padding-right: 0;
     }
 }
 
@@ -154,13 +204,13 @@
     }
 
     .Meeting article.circles img {
-        min-width: calc(90vw / 3);
-        min-height: calc(90vw / 3);
+        min-width: calc(80vw / 3);
+        min-height: calc(80vw / 3);
         left: 10vw;
     }
 
     .Meeting article.circles div.circle {
-        min-width: calc(90vw / 3);
-        min-height: calc(90vw / 3);
+        min-width: calc(80vw / 3);
+        min-height: calc(80vw / 3);
     }
 }

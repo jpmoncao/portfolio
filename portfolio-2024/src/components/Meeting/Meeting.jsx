@@ -9,8 +9,6 @@ export default function Meeting() {
         display: 'block',
         position: 'relative',
         borderRadius: '50%',
-        minWidth: 'calc(50vw / 3)',
-        minWeight: 'calc(50vw / 3)',
         width: '100%'
     }
 
