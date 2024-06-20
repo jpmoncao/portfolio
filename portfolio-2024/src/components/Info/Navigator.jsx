@@ -1,12 +1,3 @@
-import { motion } from 'framer-motion';
+export default function Navigator(active) {
 
-import { variants } from '../../utils/variants';
-
-import './styles.css';
-
-export default function Navigator() {
-    return (
-        <section className='Navigator'>
-        </section>
-    )
 }

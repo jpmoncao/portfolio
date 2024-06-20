@@ -1,0 +1,47 @@
+[
+    {
+        "title": "About.Me()",
+        "subtitle": "Sobre mim",
+        "content": [
+            {
+                "desc": "Meu nome é João Pedro, eu tenho ||idade|| anos e sou de Fernandópolis, interior de São Paulo, Brasil. Durante a pandêmia descobri a programação e, como um filme de romance, foi paixão à primeira vista. Hoje, com mais experência, mas com a mesma fome por aprendizado, atuo como desenvolvedor de software, no momento, há ||experiencia|| ano(s). Como meus hobbies tenho o basquete e os jogos. Sou um entusiasta da leitura e da botânica residencial. Meu melhor amigo é Jesus, por Ele quem vivo! Estou ansioso para te conhecer também..."
+            }
+        ]
+    },
+    {
+        "title": "Work.Experience()",
+        "subtitle": "Experiência profissional",
+        "content": [
+            {
+                "desc": "Programador Freelance WAL Advogados (2023)",
+                "href": "https://waladvogados.com.br/"
+            },
+            {
+                "desc": "Programador Estágiario Ascont Sistemas (2023-2024)",
+                "href": "https://ascontsistemas.com.br/"
+            },
+            {
+                "desc": "Desenvolvedor de Software Ascont Sistemas (2024-atual)",
+                "href": "https://ascontsistemas.com.br/"
+            }
+        ]
+    },
+    {
+        "title": "Academic.Formation()",
+        "subtitle": "Formação acadêmica",
+        "content": [
+            {
+                "desc": "Ensino Médio com ênfase em Ciências Exatas e Engenharias - ETEC Fernandópolis (2021-2023)",
+                "href": "https://etecfernandopolis.com.br/site/curso/ensino-medio-exatas/"
+            },
+            {
+                "desc": "Técnico em Informática - ETEC Fernandópolis (2022-2023)",
+                "href": "https://etecfernandopolis.com.br/site/curso/informatica/"
+            },
+            {
+                "desc": "Ensino Superior Sistemas para Internet - FATEC Jales (2024-2026)",
+                "href": "https://www.fatecjales.edu.br/graduacao/sistemas-para-internet"
+            }
+        ]
+    }
+]
