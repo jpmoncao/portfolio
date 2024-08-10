@@ -9,7 +9,8 @@ export default function Info() {
     useEffect(() => {
         async function getContentPages() {
             try {
-                const response = await fetch('./src/text.json', {
+                // Into public directory
+                const response = await fetch('/info-section.json', {
                     headers: {
                         Accept: 'application/json'
                     }

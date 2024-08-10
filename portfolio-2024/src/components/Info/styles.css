@@ -8,7 +8,7 @@
     align-items: center;
     gap: 1rem;
 
-    min-height: calc(90vh - 3rem * 2);
+    min-height: calc(75vh - 3rem * 2);
     max-height: fit-content;
     overflow: hidden;
     padding: 3rem 1rem;
@@ -54,7 +54,7 @@
 }
 
 .Info article ul.text-content-container {
-    max-width: 50vw;
+    max-width: 60vw;
     padding-inline-start: 0;
 }
 

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "React",
+        "description": "Framework JS focado em SPA",
+        "level": 4,
+        "imgContent": "https://skillicons.dev/icons?i=react"
+    },
+    {
+        "name": "PHP",
+        "description": "Linguagem para servidores, comumente usada na web",
+        "level": 5,
+        "imgContent": "https://skillicons.dev/icons?i=php"
+    },
+    {
+        "name": "Typescript",
+        "description": "Linguagem tipada do Javascript",
+        "level": 4,
+        "imgContent": "https://skillicons.dev/icons?i=typescript"
+    }
+]

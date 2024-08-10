@@ -1,216 +1,88 @@
 /* Container */
-.Meeting {
-    /* padding-top: 9rem; */
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 100vw;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* Textos */
-.Meeting article.text {
-    max-width: 50%;
+.Skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
 
-    padding-left: calc(6vw - 2rem / 2);
+    min-height: calc(75vh - 3rem * 2);
+    max-height: fit-content;
+    overflow: hidden;
+    padding: 3rem 1rem;
+    width: auto;
+    max-width: 100vw;
 }
 
-.Meeting article.text h1 {
-    font-size: 4em;
+.Skills article.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    height: max-content;
+    padding: 2rem 0;
+}
+
+.Skills article.text h1 {
+    font-size: 4rem;
     font-weight: 800;
+    text-align: center;
+    text-shadow: 0px 0px 32px #2c363f4b;
     line-height: 0.8em;
+    max-width: 100%;
+    height: auto;
 
     margin: 0;
 }
 
-.Meeting article.text h2 {
-    font-size: 1.5em;
-    font-weight: lighter;
+.Skills .skills-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 8rem);
+    grid-template-columns: repeat(auto-fit, 8rem);
+    gap: 2rem;
 
-    margin-top: 6px;
-    margin-bottom: -4px;
-
-    align-self: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 2rem 1rem;
 }
 
-.Meeting article.text h2:first-child {
-    align-self: flex-start;
+.Skill {
+    position: relative;
+    /* Necessário para que o ::before seja posicionado em relação a .Skill */
 }
 
-.Meeting article.circles-container {
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: -20vw;
-
-    padding-right: calc(6vw - 2rem / 2);
-
+.Skill .skill-fill {
+    display: block;
+    /* background-image: var(--aqua-fade); */
+    background: var(--persiangreen);
+    border-radius: 2rem;
+    height: 8rem;
+    width: 8rem;
+    z-index: 1;
+    /* Posiciona o ::before abaixo da imagem */
 }
 
-.Meeting article.circles {
-    padding: 0;
-    max-width: 75%;
-    margin-left: -10vw;
+.Skill .skill-img {
+    height: 8rem;
+    width: 8rem;
+    z-index: 2;
+
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.Meeting article.circles img {
-    min-width: calc(55vw / 3);
-    min-height: calc(55vw / 3);
-}
-
-.Meeting article.circles div {
-    min-width: calc(55vw / 3);
-    min-height: calc(55vw / 3);
-}
-
-/* Social icons */
-.Meeting article.social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
-    gap: 1rem;
-    width: 100%;
-    padding-right: 2rem;
-}
-
-.Meeting article.social-icons a {
-    height: 1.5rem;
-}
-
-.Meeting article.social-icons img {
-    height: 100%;
-}
-
-/* Círculos */
-.Meeting article.circles {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.Skill .skill-img:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {}
 
-    /* Container */
-    .Meeting {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 4rem;
-        justify-content: center;
-    }
+@media screen and (max-width: 767px) {}
 
-
-    /* Textos */
-    .Meeting article.text {
-        padding: 0;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-
-    /* Círculos */
-    .Meeting article.circles-container {
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .Meeting article.circles {
-        padding: 0;
-        max-width: 75%;
-        margin-left: -10vw;
-    }
-
-    .Meeting article.circles img {
-        min-width: calc(55vw / 3);
-        min-height: calc(55vw / 3);
-        left: 10vw;
-    }
-
-    .Meeting article.circles div {
-        min-width: calc(55vw / 3);
-        min-height: calc(55vw / 3);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .Meeting article.circles-container {
-        max-width: 60%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .Meeting article.text h1 {
-        font-size: calc(5em / 1.2);
-    }
-
-    .Meeting article.text h2 {
-        font-size: calc(1.5em / 1.2);
-    }
-
-    .Meeting article.circles img {
-        min-width: calc(75vw / 3);
-        min-height: calc(75vw / 3);
-        left: 10vw;
-    }
-
-    .Meeting article.circles div {
-        min-width: calc(75vw / 3);
-        min-height: calc(75vw / 3);
-    }
-
-    .Meeting article.social-icons {
-        padding-right: 0;
-    }
-}
-
-@media screen and (max-width: 494px) {
-
-    /* Container */
-    .Meeting {
-        height: calc(90vh - 4rem);
-    }
-
-    /* Textos */
-    .Meeting article.text {
-        padding: 0;
-        margin: 0 auto;
-        max-width: 95%;
-    }
-
-    .Meeting article.text h1 {
-        font-size: calc(5em / 1.8);
-        margin-top: 6px;
-    }
-
-    .Meeting article.text h2 {
-        font-size: calc(1.5em / 1.5);
-    }
-
-    /* Círculos */
-    .Meeting article.circles {
-        padding: 0;
-        max-width: 90%;
-        margin-left: -10vw;
-    }
-
-    .Meeting article.circles img {
-        min-width: calc(80vw / 3);
-        min-height: calc(80vw / 3);
-        left: 10vw;
-    }
-
-    .Meeting article.circles div.circle {
-        min-width: calc(80vw / 3);
-        min-height: calc(80vw / 3);
-    }
-}
+@media screen and (max-width: 494px) {}
