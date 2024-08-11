@@ -1,20 +1,68 @@
 [
     {
         "name": "React",
-        "description": "Framework JS focado em SPA",
+        "description": "Framework Front-End Web",
         "level": 4,
         "imgContent": "https://skillicons.dev/icons?i=react"
     },
     {
         "name": "PHP",
-        "description": "Linguagem para servidores, comumente usada na web",
+        "description": "Linguagem de programação",
         "level": 5,
         "imgContent": "https://skillicons.dev/icons?i=php"
     },
     {
         "name": "Typescript",
-        "description": "Linguagem tipada do Javascript",
+        "description": "Linguagem de programação",
         "level": 4,
         "imgContent": "https://skillicons.dev/icons?i=typescript"
+    },
+    {
+        "name": "Node.js",
+        "description": "Linguagem de programação",
+        "level": 5,
+        "imgContent": "https://skillicons.dev/icons?i=nodejs"
+    },
+    {
+        "name": "Python",
+        "description": "Linguagem de programação",
+        "level": 3,
+        "imgContent": "https://skillicons.dev/icons?i=python"
+    },
+    {
+        "name": "Java",
+        "description": "Linguagem de programação",
+        "level": 3,
+        "imgContent": "https://skillicons.dev/icons?i=java"
+    },
+    {
+        "name": "Laravel",
+        "description": "Framework PHP",
+        "level": 4,
+        "imgContent": "https://skillicons.dev/icons?i=laravel"
+    },
+    {
+        "name": "HTML 5",
+        "description": "Linguagem de marcação",
+        "level": 5,
+        "imgContent": "https://skillicons.dev/icons?i=html"
+    },
+    {
+        "name": "CSS 3",
+        "description": "Linguagem de estilo",
+        "level": 5,
+        "imgContent": "https://skillicons.dev/icons?i=css"
+    },
+    {
+        "name": "MySQL",
+        "description": "Banco de Dados",
+        "level": 4,
+        "imgContent": "https://skillicons.dev/icons?i=mysql"
+    },
+    {
+        "name": "PostgreSQL",
+        "description": "Banco de Dados",
+        "level": 3,
+        "imgContent": "https://skillicons.dev/icons?i=postgresql"
     }
 ]

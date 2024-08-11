@@ -7,7 +7,6 @@
     gap: 1rem;
 
     min-height: calc(75vh - 3rem * 2);
-    max-height: fit-content;
     overflow: hidden;
     padding: 3rem 1rem;
     width: auto;
@@ -44,40 +43,80 @@
 
     width: 80%;
     margin: 0 auto;
-    height: fit-content;
+    height: max-content;
     padding: 2rem 1rem;
 }
 
 .Skill {
     position: relative;
-    /* Necessário para que o ::before seja posicionado em relação a .Skill */
 }
 
-.Skill .skill-fill {
+.Skill:hover .skill-front {
+    transform: rotateY(180deg);
+}
+
+.Skill:hover .skill-back {
+    transform: rotateY(0deg);
+}
+
+.Skill .skill-card {
     display: block;
-    /* background-image: var(--aqua-fade); */
     background: var(--persiangreen);
     border-radius: 2rem;
     height: 8rem;
     width: 8rem;
-    z-index: 1;
-    /* Posiciona o ::before abaixo da imagem */
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.Skill .skill-back {
+    height: calc(8rem - 1.5rem);
+    width: calc(8rem - 1.5rem);
+    padding: calc(1.5rem / 2);
+    transform: rotateY(180deg);
+}
+
+.Skill .skill-back,
+.Skill .skill-front {
+    position: absolute;
+    backface-visibility: hidden;
 }
 
 .Skill .skill-img {
-    height: 8rem;
-    width: 8rem;
-    z-index: 2;
-
-    transform: rotateY(0deg);
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
 }
 
-.Skill .skill-img:hover {
-    transform: rotateY(180deg);
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+.Skill .skill-back {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.Skill .skill-back * {
+    margin: 0;
+}
+
+.Skill .skill-card-title {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.Skill .skill-img-xs {
+    width: 1.2rem;
+    height: 1.2rem;
+    opacity: 0.5;
+}
+
+.Skill .skill-back h2 {
+    font-size: 0.9em;
+}
+
+.Skill .skill-back p {
+    font-size: 0.75em;
 }
 
 
