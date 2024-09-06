@@ -7,14 +7,12 @@ export default function Skills() {
     useEffect(() => {
         async function getSkills() {
             try {
-                // Into public directory
                 const response = await fetch('/skills-section.json', {
                     headers: {
                         Accept: 'application/json'
                     }
                 });
                 const data = await response.json();
-                console.log(data)
                 setSkills(data);
             } catch (error) {
                 console.error('Error fetching content:', error);
