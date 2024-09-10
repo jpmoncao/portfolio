@@ -62,7 +62,7 @@
 .Skill .skill-card {
     display: block;
     background: var(--persiangreen);
-    border-radius: 2rem;
+    border-radius: 32px;
     height: 8rem;
     width: 8rem;
     position: relative;
@@ -122,6 +122,96 @@
 
 @media screen and (max-width: 1023px) {}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .Skills article.text h1 {
+        font-size: 2.5rem;
+    }
 
-@media screen and (max-width: 494px) {}
+    .Skills .skills-container {
+        grid-template-columns: repeat(auto-fill, 6rem);
+        grid-auto-rows: minmax(6rem, auto);
+    }
+
+    .Skill .skill-card {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Skill .skill-back {
+        height: 6rem;
+        width: 6rem;
+        padding: 0;
+    }
+
+    .Skill .skill-img-xs {
+        width: 0.75rem;
+        height: 0.75rem;
+        /* display: none; */
+    }
+
+    .Skill .skill-back h2 {
+        font-size: 0.8rem;
+    }
+
+    .Skill .skill-back p {
+        display: none;
+    }
+
+    .Skill .skill-back div span img {
+        height: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .Skills {
+        min-height: auto;
+    }
+
+    .Skills article.text {
+        padding: 0;
+    }
+
+    .Skills article.text h1 {
+        font-size: 2rem;
+    }
+
+    .Skills .skills-container {
+        grid-template-columns: repeat(auto-fill, 4rem);
+        grid-auto-rows: minmax(4rem, auto);
+    }
+
+    .Skill .skill-card {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 16px;
+    }
+
+    .Skill .skill-back {
+        height: 4rem;
+        width: 4rem;
+        padding: 0;
+    }
+
+    .Skill .skill-img-xs {
+        display: none;
+    }
+
+    .Skill .skill-back h2 {
+        font-size: 0.6rem;
+    }
+
+    .Skill .skill-back p {
+        display: none;
+    }
+
+    .Skill .skill-back div span img {
+        height: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 360px) {}

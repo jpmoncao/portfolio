@@ -148,6 +148,7 @@
 }
 
 @media screen and (max-width: 1023px) {
+
     .Contact .info .contact-aside article div * {
         font-size: 1em;
     }
@@ -176,6 +177,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .Contact {
+        background: var(--antiquewhite);
+        padding: 3rem 1rem 0;
+    }
+
+    .Contact .title h1 {
+        font-size: 2.5rem;
+    }
+
     .Contact .info {
         display: flex;
         flex-direction: column;
@@ -198,7 +208,7 @@
 
 @media screen and (max-width: 494px) {
     .Contact .title h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .Contact .info .contact-aside article div * {
@@ -220,6 +230,7 @@
     .Contact .info form input,
     .Contact .info form textarea {
         width: 80%;
+        font-size: 0.8em;
     }
 
     .Contact .info form button {

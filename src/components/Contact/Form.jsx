@@ -1,6 +1,5 @@
 import './styles.css';
 import emailjs from 'emailjs-com';
-import { useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 
 const userID = import.meta.env.VITE_USER_ID;

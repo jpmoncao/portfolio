@@ -176,6 +176,10 @@
         gap: 0rem;
     }
 
+    .Info article.text {
+        max-width: fit-content;
+    }
+
     .Info article.text h1 {
         font-size: 2rem;
     }
@@ -202,8 +206,12 @@
     }
 }
 
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 360px) {
     .Info article.text h1 {
         font-size: 1.5rem;
+    }
+
+    .Info article.text h2 {
+        font-size: 0.8rem;
     }
 }
