@@ -9,7 +9,7 @@
     min-height: calc(75vh - 3rem * 2);
     overflow: hidden;
     padding: 3rem 1rem;
-    width: auto;
+    width: 100%;
     max-width: 100vw;
 }
 
