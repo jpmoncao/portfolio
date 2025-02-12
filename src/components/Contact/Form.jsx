@@ -1,6 +1,5 @@
 import './styles.css';
 import emailjs from 'emailjs-com';
-import { useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 
 const userID = import.meta.env.VITE_USER_ID;
@@ -12,40 +11,46 @@ export default function Form() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const name = e.target.querySelector('#from_name').value;
-        const email = e.target.querySelector('#from_email').value;
-        const message = e.target.querySelector('#message').value;
+        try {
+            const name = e.target.querySelector('#from_name').value;
+            const email = e.target.querySelector('#from_email').value;
+            const message = e.target.querySelector('#message').value;
 
-        if (name.trim() === '') {
-            toast.error('O nome é um campo obrigatório');
-            return;
-        }
-
-        if (email.trim() === '') {
-            toast.error('O email é um campo obrigatório');
-            return;
-        }
-
-        if (message.trim() === '') {
-            toast.error('A mensagem é um campo obrigatório');
-            return;
-        }
-
-        toast.promise(
-            emailjs.sendForm(
-                serviceID,
-                templateID,
-                e.target,
-                userID
-            ),
-            {
-                loading: 'Enviando...',
-                success: 'E-mail enviado com sucesso!',
-                error: 'Falha ao enviar o e-mail!',
+            if (name.trim() === '') {
+                toast.error('O nome é um campo obrigatório');
+                return;
             }
-        );
 
-        e.target.reset();
+            if (email.trim() === '') {
+                toast.error('O email é um campo obrigatório');
+                return;
+            }
+
+            if (message.trim() === '') {
+                toast.error('A mensagem é um campo obrigatório');
+                return;
+            }
+
+            toast.promise(
+                emailjs.sendForm(
+                    serviceID,
+                    templateID,
+                    e.target,
+                    userID
+                ),
+                {
+                    loading: 'Enviando...',
+                    success: 'E-mail enviado com sucesso!',
+                    error: 'Falha ao enviar o e-mail!',
+                }
+            );
+
+            e.target.reset();
+        } catch (error) {
+            console.error('Erro: ' + error)
+            toast.error('Erro interno no servidor');
+            return;            
+        }
     }
 
 

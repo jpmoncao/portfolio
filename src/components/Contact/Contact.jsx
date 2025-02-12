@@ -25,7 +25,7 @@ export default function Contact() {
 
                 <Form />
             </section>
-            <footer>dev by <a target="_blank" href="https://github.com/jpmoncao">João Pedro Monção</a></footer>
+            <footer>Developed by <a target="_blank" href="https://github.com/jpmoncao">João Pedro Monção</a></footer>
         </section>
     );
 }
