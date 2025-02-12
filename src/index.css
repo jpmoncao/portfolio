@@ -2,7 +2,7 @@
 
 :root {
   --gunmental: #2C363F;
-  --antiquewhite: #FFEEDB;
+  --antiquewhite: #fff5e9;
   --persiangreen: #17A398;
   --aquamarine: #00F0B5;
   --mint: #4ef8ce;
@@ -26,9 +26,8 @@
 body,
 div#root {
   margin: 0;
-  /* display: flex; */
-  place-items: center;
-  min-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
   max-width: 100vw;
   min-height: 100vh;
 }
